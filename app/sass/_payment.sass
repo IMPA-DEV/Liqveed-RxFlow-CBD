@@ -1,0 +1,494 @@
+/* payment */
+.payment-home
+  padding-top: 55px
+.payment-title
+  display: flex
+  align-items: center
+  justify-content: space-between
+.payment-title br
+  display: none
+
+.payment-title h1
+  font-size: 35px
+  margin: 0
+
+.payment-title__img
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    width: 100%
+    max-width: 322px
+    height: 100%
+    overflow: visible
+
+.payment-title__img img
+  max-width: 83px
+
+/* payment content */
+
+.payment-content
+  padding: 24px 0 91px
+.payment-content h1
+  line-height: normal
+  margin: 0 0 32px
+  font-weight: 600
+  font-size: 35px
+
+.content-row
+  display: flex
+  justify-content: space-between
+  align-items: flex-start
+  position: relative
+.content__packages
+  width: 100%
+  max-width: 752px
+.content__item
+  padding: 14px 18px
+  box-shadow: 0 2px 34px 0 rgba(0, 0, 0, 0.16)
+  border-radius: 4px
+  margin-bottom: 16px
+  border: solid 2px #fff
+  position: relative
+
+.content__item::after
+  content: ""
+  display: block
+  width: 100%
+  height: 100%
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+
+.content__item-active
+  border: solid 2px #2953a0
+  background-color: #fff
+
+.content__item-active::after
+  display: none
+
+.content__item-active .content__title-top::before
+  background-color: $main-color
+  background-image: url('../img/payment/check2.svg')
+  background-repeat: no-repeat
+  background-position: center
+
+.content__item-active .content__text-price span
+  color: #e53d00
+
+.content__text-link
+  color: #fff
+  border-radius: 6px
+
+.content__item-active .content__text-link
+  border: none
+  background-color: #ec7505
+  box-shadow: 0 2px 0 0 #e53d00
+
+.content__item-active .content__text-link:hover
+  background-color: #e53d00
+
+.content__item-active .content__item-icon
+  background-color: #e53d00
+  text-decoration: none
+
+.content__item:last-child
+  margin-bottom: 0
+
+.content__title-top
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-bottom: 60px
+  position: relative
+
+.content__title-top::before
+  content: ""
+  display: block
+  position: absolute
+  top: 0
+  left: 0
+  border-radius: 50%
+  width: 30px
+  height: 30px
+  border: solid 2px $main-color
+
+.content__title-top h4
+  padding-left: 43px
+  font-size: 19px
+  line-height: normal
+  font-weight: 500
+
+.content__item-icon
+  padding: 4px 6px 2px 37px
+  border-radius: 3px
+  background-color: #b8b8b8
+  text-transform: uppercase
+  color: #fff
+  font-size: 16px
+  line-height: normal
+  font-weight: 700
+  position: relative
+  font-family: "Roboto", sans-serif
+
+.content__item-icon::before
+  content: ""
+  display: block
+  background-image: url('../img/payment/cargo-truck.svg')
+  width: 24px
+  height: 15px
+  position: absolute
+  top: 6px
+  left: 7px
+
+.content__price
+  display: flex
+
+.content__img
+  width: 50%
+  text-align: center
+  display: flex
+  align-items: center
+  justify-content: center
+
+.content__img-star
+  position: absolute
+  width: 80px
+  height: 80px!important
+  top: -90px
+  left: -28px
+
+.content__item:nth-child(2) .content__img-star
+  right: 137px
+
+.content__img span
+  margin: 0 14px 0 17px
+  color: #e53d00
+  font-size: 40px
+  font-weight: 500
+  position: relative
+
+.content__text
+  width: 50%
+  color: #002626
+  line-height: normal
+
+.content__text-title
+  font-size: 35px
+  font-weight: 600
+  line-height: 35px
+  opacity: 0.8
+  letter-spacing: 0.5px
+
+.content__text-subtitle
+  display: block
+  font-weight: 500
+  font-size: 16px
+  color: #e53d00
+  margin-bottom: 19px
+
+.content__text-gift
+  font-size: 26px
+  opacity: 0.8
+  font-weight: 300
+  letter-spacing: 0.4px
+
+.content__text-price
+  font-family: "Roboto", sans-serif
+  color: #002626
+  font-weight: 400
+
+.content__text-price span
+  font-weight: 700
+  font-size: 39px
+  color: $main-color
+  font-family: "Roboto", sans-serif
+
+.content__text-bottom
+  margin-top: 23px
+  font-weight: 500
+  text-transform: uppercase
+  font-size: 13px
+  font-family: "Roboto", sans-serif
+
+.content__text-bottom span
+  font-family: inherit
+  color: #e53d00
+
+.content__text-link
+  background-color: #b8b8b8
+  box-shadow: none
+  margin-top: 18px
+  display: inline-block
+  text-transform: none
+  line-height: 20px
+  font-size: 18px
+  font-weight: 700
+  padding: 15px 15px 11px
+
+.content__text-link:hover
+  background-color: #b8b8b8
+
+/* form */
+
+.content__form
+  background-color: #fff
+  max-width: 322px
+  width: 100%
+  border-radius: 4px
+  margin-left: 20px
+  position: relative
+
+.content__form-fixed
+  transition: all 300ms ease
+
+.content__form-fixed .content__form-rel
+  position: absolute
+  top: 0
+  left: 0
+
+.content__form-fixed .content__form-st
+  position: fixed
+  width: 322px
+  top: 35px
+  z-index: 1
+
+.content__form-head
+  background-color: $main-color
+  text-align: center
+  color: #fff
+  padding: 8px 10px 3px
+  line-height: normal
+  border-top-right-radius: 4px
+  border-top-left-radius: 4px
+
+.content__form-subtitle
+  font-size: 16px
+  font-weight: 500
+
+.content__form-title
+  font-size: 22px
+  font-weight: 700
+
+#payment-form
+  padding: 21px
+  background-color: #fff
+  box-shadow: 0 2px 34px 0 rgba(0, 0, 0, 0.16)
+  border-bottom-right-radius: 4px
+  border-bottom-left-radius: 4px
+
+#payment-form h4
+  font-size: 14px
+  margin: 13px 0 11px
+  font-weight: 500
+  line-height: normal
+
+.content__form-policy
+  padding-top: 17px
+  text-align: center
+  line-height: normal
+  letter-spacing: 0.2px
+
+.content__form-policy h5
+  font-size: 14px
+  position: relative
+  display: inline-block
+  padding-left: 18px
+
+.content__form-policy h5::before
+  content: ""
+  display: block
+  width: 15px
+  height: 15px
+  position: absolute
+  background-color: $main-color
+  top: 2px
+  left: 0
+  border-radius: 50%
+  background-image: url('../img/payment/check.svg')
+  background-repeat: no-repeat
+  background-position: center
+
+.content__form-policy p
+  font-size: 13px
+  line-height: 20px
+  opacity: 0.8
+
+.content__form-row
+  display: flex
+  margin-bottom: 10px
+
+.content__form input::-webkit-input-placeholder
+  font-size: 13px
+  font-family: 'Roboto', sans-serif
+
+.content__form select
+  opacity: 0.8
+
+.content__form input:not([type= "submit"]),
+.content__form select
+  padding: 11px 0 10px 10px
+  font-family: 'Roboto', sans-serif
+  font-size: 13px
+  border: solid 1px rgba(151, 151, 151, 0.35)
+  border-radius: 3px
+
+.content__form .input-stl
+  width: 100%
+  margin-bottom: 10px
+
+.content__form-row p
+  text-align: right
+
+.content__form-row a
+  color: $main-color
+  font-size: 13px
+
+.content__form input[type="submit"]
+  margin-top: 31px
+  box-shadow: none
+  animation: grad 700ms linear infinite
+
+.content__form input[type="submit"]:hover
+  animation: none
+
+.cvv-code
+  position: relative
+
+.cvv-codeInst
+  position: absolute
+  font-size: 11px
+  width: 150px
+  background-color: #fff
+  border: 1px solid rgba(0, 0, 0, 0.3)
+  border-radius: 5px
+  padding: 5px
+  margin: 0
+  text-align: left !important
+  top: 44%
+  right: 27px
+  display: none
+
+.cvv-codeInst span
+  opacity: 0.8
+
+
+.content__form-row p,
+.content__form-row select,
+.content__form-row input:not([type= "submit"])
+  width: 50%
+  margin-right: 10px
+
+.content__form-row p,
+.content__form-row select:last-child,
+.content__form-row input:last-child
+  margin-right: 0px
+
+.payment-form__address
+  display: none
+
+.payment-form__address input,
+.payment-form__address select
+  width: 100%
+  margin-top: 10px
+
+input[type="number"]
+  padding: 11px 15px 10px 16px
+  font-size: 13px
+  border: solid 1px $main-color
+  border-radius: 3px
+  width: 90px
+  box-sizing: border-box
+.content__cost
+  padding-top: 70px
+.content__finalcost
+  display: flex
+  justify-content: space-between
+  align-items: flex-end
+  padding-top: 20px
+  .final-text
+    font-size: 25px
+    font-weight: 600
+    font-style: normal
+    font-stretch: normal
+    line-height: normal
+    letter-spacing: normal
+    color: $text-color
+    font-family: $font-catamaran
+    line-height: 1
+  .final-cost
+    font-family: $font-roboto
+    font-size: 39px
+    font-weight: bold
+    font-style: normal
+    font-stretch: normal
+    line-height: normal
+    letter-spacing: normal
+    color: $main-color
+    line-height: 1
+
+.sumary__item
+  border: 2px solid #2953a0
+  padding: 40px 33px
+  border-radius: 4px
+
+.sumary__item-title
+  font-family: $font-catamaran
+  font-size: 22px
+  font-weight: 600
+  font-style: normal
+  font-stretch: normal
+  letter-spacing: normal
+  color: $text-color
+  line-height: 1
+  margin-bottom: 35px
+
+.sumary-col_container
+  font-family: $font-catamaran
+  font-size: 19px
+  font-weight: 500
+  font-style: normal
+  font-stretch: normal
+  line-height: normal
+  letter-spacing: normal
+  color: $text-color
+
+.sumary-shiping
+  border-top: 1px solid rgba(151, 151, 151, 0.35)
+  border-bottom: 1px solid rgba(151, 151, 151, 0.35)
+  display: flex
+  justify-content: space-between
+  margin: 5px 0
+  padding: 5px 0
+
+.sumary-total
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+.sumary-puck,
+.sumary-shiping p:first-child
+  font-weight: 500
+
+#sumary-shiping
+  font-size: 20px
+  color: $text-color
+
+.total-text
+  color: #e53d00
+  font-family: $font-catamaran
+  font-weight: 600
+  font-size: 25px
+
+.sumary-total_price
+  color: #e53d00
+  font-family: $font-roboto
+  font-size: 20px
+  font-weight: bold
+  font-style: normal
+  font-stretch: normal
+  line-height: normal
+  letter-spacing: normal
+
+.content__form input:not([type=submit]), .content__form select
+  box-sizing: border-box

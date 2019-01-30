@@ -1,0 +1,146 @@
+/* summary */
+.sum-container
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.summary-title
+  font-size: 46px
+  text-align: center
+  text-transform: capitalize
+
+.summary-link a
+  font-size: 22px
+  font-weight: 500
+  font-family: 'Roboto', sans-serif
+  color: #fff
+
+.summary-link span
+  font-size: 22px
+  color: #fff
+
+.summary-link
+  position: relative
+
+.summary-link::before
+  content: ""
+  background: url('../img/home.svg') no-repeat center
+  background-size: cover
+  position: absolute
+  width: 20px
+  height: 17px
+  left: -25px
+  top: 3px
+.summary
+  padding: 80px 0 60px
+
+.summary .container
+  position: relative
+
+.summary-subtitle
+  font-size: 35px
+  font-weight: 600
+  letter-spacing: 0.5px
+  margin: 0 0 32px
+
+.sect-width
+  max-width: 655px
+  box-shadow: 0 2px 34px 0 rgba(0, 0, 0, 0.16)
+  border-radius: 4px
+  margin: 0 0 32px
+.ordered-title
+  background-color: $main-color
+  text-align: center
+  padding: 9px 47px
+  font-size: 24px
+  color: #fff
+  line-height: 39px
+  border-top-right-radius: 4px
+  border-top-left-radius: 4px
+
+.ordered-container,
+.billing-container
+  padding: 22px 47px 72px
+
+.ordered-row
+  display: flex
+  justify-content: space-between
+  border-bottom: solid 2px rgba(151, 151, 151, 0.35)
+  padding: 10px 0
+
+.ordered-row:first-child .ordered-item
+  font-weight: 500
+  text-transform: uppercase
+
+.ordered-row:last-child .ordered-item
+  font-weight: 700
+  font-size: 18px
+
+.ordered-item
+  margin: 0
+  font-size: 16px
+  opacity: 0.8
+  font-family: "Roboto", sans-serif
+  line-height: 23px
+
+.ordered-item
+  width: 20%
+  text-align: right
+
+.ordered-item:first-child
+  width: 30%
+  text-align: left
+
+.billing-row
+  display: flex
+  border-bottom: solid 2px rgba(151, 151, 151, 0.35)
+  padding: 10px 0
+
+.billing-item
+  margin: 0
+  font-size: 16px
+  opacity: 0.8
+  font-family: "Roboto", sans-serif
+  line-height: 23px
+
+.billing-item:first-child
+  text-transform: uppercase
+  font-weight: 500
+  width: 45%
+  padding-right: 10px
+
+.billing-item:last-child
+  width: 55%
+
+.summary-info
+  max-width: 655px
+  font-size: 14px
+  opacity: 0.6
+  line-height: normal
+
+.summary-row
+  display: flex
+  justify-content: space-between
+
+.summary-img
+  text-align: center
+
+.summary-icons
+  display: flex
+  justify-content: center
+
+.summary-icons img
+  padding: 0 20px
+
+.summary-item-img
+  position: relative
+  max-width: 380px
+  width: 100%
+
+.summary-fixed .summary-img
+  position: absolute
+  top: 0
+  left: 0
+
+.summary-fixed .summary-img-fix
+  position: fixed

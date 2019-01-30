@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>RxFlow CBD / Payment</title>
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Template Basic Images Start -->
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="icon" href="img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+    <!-- Template Basic Images End -->
+
+    <!-- Custom Browsers Color Start -->
+    <meta name="theme-color" content="#000">
+    <!-- Custom Browsers Color End -->
+
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:400,600,700|Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+
+<!-- Warning -->
+<section id="warning">
+    <div class="container">
+        <div class="warning-wrapp">
+            <p>
+                <span class="warning">WARNING:</span>Due to extremely high media demand, there is limited supply of Hemp CBD oil in stock as of
+                <span id="today">Monday, January 28, 2019</span>
+            </p>
+        </div>
+    </div>
+</section>
+
+<section class="summary">
+    <div class="container">
+        <h2 class="summary-subtitle">Thank you for your order <span id="summary-name">..Name..</span></h2>
+        <div class="summary-row">
+            <div class="summary-item">
+                <div class="ordered sect-width">
+                    <h3 class="ordered-title">Items Ordered</h3>
+                    <div class="ordered-container">
+                        <div class="ordered-row">
+                            <p class="ordered-item">product</p>
+                            <p class="ordered-item">price</p>
+                            <p class="ordered-item">s &amp; h</p>
+                            <p class="ordered-item">total</p>
+                        </div>
+                        <div class="ordered-row">
+                            <p class="ordered-item" id="sum-product"></p>
+                            <p class="ordered-item" id="sum-price">$null</p>
+                            <p class="ordered-item" id="shipping"></p>
+                            <p class="ordered-item"></p>
+                        </div>
+                        <div class="ordered-row">
+                            <p class="ordered-item"></p>
+                            <p class="ordered-item"></p>
+                            <p class="ordered-item"></p>
+                            <p class="ordered-item" id="totalPrice">$null</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="billing sect-width">
+                    <h3 class="ordered-title">Shipping Information</h3>
+                    <div class="billing-container">
+                        <div class="billing-row">
+                            <p class="billing-item">First Name:</p>
+                            <p class="billing-item" id="first-name"></p>
+                        </div>
+                        <div class="billing-row">
+                            <p class="billing-item">Last Name:</p>
+                            <p class="billing-item" id="last-name"></p>
+                        </div>
+                        <div class="billing-row">
+                            <p class="billing-item">Address Line 1:</p>
+                            <p class="billing-item" id="line-1"></p>
+                        </div>
+                        <div class="billing-row">
+                            <p class="billing-item">Address Line 2:</p>
+                            <p class="billing-item" id="line-2"></p>
+                        </div>
+                        <div class="billing-row">
+                            <p class="billing-item">City:</p>
+                            <p class="billing-item" id="city"></p>
+                        </div>
+                        <div class="billing-row">
+                            <p class="billing-item">State:</p>
+                            <p class="billing-item" id="state"></p>
+                        </div>
+                        <div class="billing-row">
+                            <p class="billing-item">Zip Code:</p>
+                            <p class="billing-item" id="zip"></p>
+                        </div>
+                        <div class="billing-row">
+                            <p class="billing-item">Pnone:</p>
+                            <p class="billing-item" id="phone"></p>
+                        </div>
+                        <div class="billing-row">
+                            <p class="billing-item">Email:</p>
+                            <p class="billing-item" id="mail"></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="summary-info">
+                    <p>*A confirmation email has been sent to <span id="mail2"></span> </p>
+                    <p>IMPORTANT: If you'd like to reach our customer service please cal <span id="phone2"></span>. If you dislike the product
+                        or have any concerns please don't hesitate to call. Please call within 30 Days for a full refund on unopened
+                        product.</p>
+                </div>
+            </div>
+            <div class="summary-item-img summary-fixed">
+                <div class="summary-img">
+                    <div class="summary-img-fix">
+                        <div class="summary-bottle-img">
+                            <img class="summary-bottle" src="img/payment/vape.png" alt="">
+                        </div>
+                        <div class="summary-icons">
+                            <img src="img/home_img/2.png" alt="">
+                            <img src="img/home_img/3.png" alt="">
+                            <img src="img/home_img/4.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <form action="">
+        <input type="hidden" name="name">
+        <input type="hidden" name="lName">
+        <input type="hidden" name="adr1">
+        <input type="hidden" name="adr2">
+        <input type="hidden" name="phone">
+        <input type="hidden" name="price">
+        <input type="hidden" name="prod">
+        <input type="hidden" name="mail">
+        <input type="hidden" name="shipping">
+        <input type="hidden" name="clientname" value="CBD Hemp CBD oil">
+    </form>
+</section>
+
+<!-- Footer -->
+<footer id="footer" class="another-footer">
+    <div class="container">
+        <div class="footer-wrapp">
+            <ul class="footer-menu">
+                <li>
+                    <a href="/terms-of-use/">Terms of Use</a>
+                </li>
+                <li>
+                    <a href="/privacy-policy/">Privacy policy</a>
+                </li>
+                <li>
+                    <a href="/contact/">Contact Us</a>
+                </li>
+            </ul>
+            <p class="footer-discr discr">This product is not for use by or sale to persons under the age of 18. This product should be used only as directed on the label. It should not be used if you are pregnant
+                or nursing. Consult with a physician before use if you have a serious medical condition or use prescription medications. A Doctor's advice should be sought before using this
+                and any supplemental dietary product. All trademarks and copyrights are property of their respective owners and are not affiliated with nor do they endorse this product. These statements have not been evaluated by the FDA. This product is not intended to diagnose, treat, cure or prevent any disease. Individual weight loss results will vary. By using this site you agree to follow the Privacy Policy and all Terms & Conditions printed on this site.
+                Void Where Prohibited By Law.</p>
+            <div class="footer-copyright-wrapp">
+                <p class="footer-copyright">Copyright 2018 © All Rights Reserved - RX Flow CBD Oil Vape</p>
+                <img src="img/1.svg" alt="MasterCard">
+                <img src="img/2.svg" alt="Visa">
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script	src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script src="js/scripts.min.js"></script>
+
+</body>

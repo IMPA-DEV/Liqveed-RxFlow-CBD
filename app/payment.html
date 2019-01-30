@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>RxFlow CBD / Payment</title>
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Template Basic Images Start -->
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="icon" href="img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+    <!-- Template Basic Images End -->
+
+    <!-- Custom Browsers Color Start -->
+    <meta name="theme-color" content="#000">
+    <!-- Custom Browsers Color End -->
+
+    <link href="https://fonts.googleapis.com/css?family=Catamaran:400,600,700|Roboto:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/media.css">
+
+</head>
+
+<body>
+
+    <!-- Warning -->
+    <section id="warning">
+        <div class="container">
+            <div class="warning-wrapp">
+                <p>
+                    <span class="warning">WARNING:</span>Due to extremely high media demand, there is limited supply of Hemp CBD oil in stock as of
+                    <span id="today">Monday, January 28, 2019</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Text -->
+    <section class="payment-home">
+        <div class="container">
+            <div class="payment-title">
+                <h1>The most powerful and <br>beneficial CBD Oil Vape</h1>
+                <div class="payment-title__img">
+                    <img src="img/home_img/2.png" alt="home-img">
+                    <img src="img/home_img/3.png" alt="home-img">
+                    <img src="img/home_img/4.png" alt="home-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Content -->
+    <section id="payment-content" class="payment-content">
+        <div class="container">
+            <div class="content-row">
+                <div class="content__packages">
+
+                    <!-- Oil Vape -->
+                    <div class="content__item content__item-active" data-id="113.97" data-item="Most Popular Package" data-ship="FREE">
+                        <div class="content__title-top">
+                            <h4>Buy 1 Bottle and Get</h4>
+                            <a class="content__item-icon" href="#">FREE SHIPPING</a>
+                        </div>
+                        <div class="content__price">
+                            <div class="content__img">
+                                <img src="img/payment/vape.png" alt="CBD Vape">
+                            </div>
+                            <div class="content__text">
+                                <h3 class="content__text-title">RX Flow CBD Vape</h3>
+                                <p class="content__text-bottom">In-stock: 187 unuts sell-out risk:
+                                    <span>high</span>
+                                </p>
+
+                                <div class="content__cost">
+                                    <input type="number" min="1" placeholder="1">
+                                </div>
+
+                                <div class="content__finalcost">
+                                    <p class="final-text">Final cost</p>
+                                    <p class="final-cost" id="final-cost">$69</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Oil Summery -->
+                    <div class="sumary__item">
+                        <h4 class="sumary__item-title">ORDER SUMMARY</h4>
+                        <div class="sumary__item-row">
+                            <div class="sumary-col">
+                                <div class="sumary-col_container">
+                                    <p class="sumary-puck" id="sumary-pack">Buy:</p>
+                                    <div class="sumary-shiping">
+                                        <p>Shipping and Handing:</p>
+                                        <p class="sumary-shiping_price" data-id="">
+                                            <span id="sumary-shiping">FREE</span>
+                                        </p>
+                                    </div>
+                                    <div class="sumary-total">
+                                        <p class="total-text">Total</p>
+                                        <p class="sumary-total_price" id="sumary-total" data-id="">$69</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content__form">
+                    <div class="content__form-rel">
+                        <div class="content__form-st">
+                            <div class="content__form-head">
+                                <h3 class="content__form-subtitle">PAYMENT INFORMATION</h3>
+                                <h3 class="content__form-title">FINAL STEP!</h3>
+                            </div>
+                            <form id="payment-form" method="POST">
+                                <input type="hidden" name="Field1" value="FirstName">
+                                <input type="hidden" name="Value1">
+                                <input type="hidden" name="Field2" value="LastName">
+                                <input type="hidden" name="Value2">
+                                <input type="hidden" name="Field3" value="Address1">
+                                <input type="hidden" name="Value3">
+                                <input type="hidden" name="Field4" value="Address2">
+                                <input type="hidden" name="Value4">
+                                <input type="hidden" name="Field5" value="ZipCode">
+                                <input type="hidden" name="Value5">
+                                <input type="hidden" name="Field6" value="PhoneNumber">
+                                <input type="hidden" name="Value6">
+                                <input type="hidden" name="Field7" value="Email">
+                                <input type="hidden" name="Value7">
+                                <input type="hidden" name="Field8" value="City">
+                                <input type="hidden" name="Value8">
+                                <input type="hidden" name="Field9" value="State">
+                                <input type="hidden" name="Value9">
+
+                                <input name="first_name" type="hidden">
+                                <input name="last_name" type="hidden">
+                                <input name="address_1" type="hidden">
+                                <input name="address_2" type="hidden">
+                                <input name="postal_code" type="hidden">
+                                <input name="phone" type="hidden">
+                                <input name="email" type="hidden">
+                                <input name="city" type="hidden">
+                                <input name="state" type="hidden">
+
+
+                                <p>
+                                    <input id="form-check__address" type="checkbox" name="checkbox" checked="" value=""> Shipping Address same as Billing</p>
+                                <div class="payment-form__address" style="display: none;">
+                                    <input name="fName" type="text" placeholder="First Name *" required="">
+                                    <input name="lName" type="text" placeholder="Last Name *" required="">
+                                    <input name="address_3" type="text" placeholder="Address *" required="">
+                                    <input name="city_2" type="text" placeholder="Your City *" required="">
+                                    <select name="state_2" data-fv-field="state">
+                                        <option selected="selected" disabled="disabled">State *</option>
+                                        <option value="AL">Alabama (AL)</option>
+                                        <option value="AK">Alaska (AK)</option>
+                                        <option value="AS">American Samoa (AS)</option>
+                                        <option value="AZ">Arizona (AZ)</option>
+                                        <option value="AR">Arkansas (AR)</option>
+                                        <option value="AE-A">Armed Forces Africa (AE)</option>
+                                        <option value="AA">Armed Forces Americas (AA)</option>
+                                        <option value="AE-C">Armed Forces Canada (AE)</option>
+                                        <option value="AE-E">Armed Forces Europe (AE)</option>
+                                        <option value="AE-M">Armed Forces Middle East (AE)</option>
+                                        <option value="AP">Armed Forces Pacific (AP)</option>
+                                        <option value="CA">California (CA)</option>
+                                        <option value="CO">Colorado (CO)</option>
+                                        <option value="CT">Connecticut (CT)</option>
+                                        <option value="DE">Delaware (DE)</option>
+                                        <option value="DC">District of Columbia (DC)</option>
+                                        <option value="FM">Federated States of Micronesia (FM)</option>
+                                        <option value="FL">Florida (FL)</option>
+                                        <option value="GA">Georgia (GA)</option>
+                                        <option value="GU">Guam (GU)</option>
+                                        <option value="HI">Hawaii (HI)</option>
+                                        <option value="ID">Idaho (ID)</option>
+                                        <option value="IL">Illinois (IL)</option>
+                                        <option value="IN">Indiana (IN)</option>
+                                        <option value="IA">Iowa (IA)</option>
+                                        <option value="KS">Kansas (KS)</option>
+                                        <option value="KY">Kentucky (KY)</option>
+                                        <option value="LA">Louisiana (LA)</option>
+                                        <option value="ME">Maine (ME)</option>
+                                        <option value="MD">Maryland (MD)</option>
+                                        <option value="MA">Massachusetts (MA)</option>
+                                        <option value="MI">Michigan (MI)</option>
+                                        <option value="MN">Minnesota (MN)</option>
+                                        <option value="MS">Mississippi (MS)</option>
+                                        <option value="MO">Missouri (MO)</option>
+                                        <option value="MT">Montana (MT)</option>
+                                        <option value="NE">Nebraska (NE)</option>
+                                        <option value="NV">Nevada (NV)</option>
+                                        <option value="NH">New Hampshire (NH)</option>
+                                        <option value="NJ">New Jersey (NJ)</option>
+                                        <option value="NM">New Mexico (NM)</option>
+                                        <option value="NY">New York (NY)</option>
+                                        <option value="NC">North Carolina (NC)</option>
+                                        <option value="ND">North Dakota (ND)</option>
+                                        <option value="MP">Northern Mariana Islands (MP)</option>
+                                        <option value="OH">Ohio (OH)</option>
+                                        <option value="OK">Oklahoma (OK)</option>
+                                        <option value="OR">Oregon (OR)</option>
+                                        <option value="PA">Pennsylvania (PA)</option>
+                                        <option value="PR">Puerto Rico (PR)</option>
+                                        <option value="MH">Republic of Marshall Islands (MH)</option>
+                                        <option value="RI">Rhode Island (RI)</option>
+                                        <option value="SC">South Carolina (SC)</option>
+                                        <option value="SD">South Dakota (SD)</option>
+                                        <option value="TN">Tennessee (TN)</option>
+                                        <option value="TX">Texas (TX)</option>
+                                        <option value="UT">Utah (UT)</option>
+                                        <option value="VT">Vermont (VT)</option>
+                                        <option value="VI">Virgin Islands of the U.S. (VI)</option>
+                                        <option value="VA">Virginia (VA)</option>
+                                        <option value="WA">Washington (WA)</option>
+                                        <option value="WV">West Virginia (WV)</option>
+                                        <option value="WI">Wisconsin (WI)</option>
+                                        <option value="WY">Wyoming (WY)</option>
+                                    </select>
+                                    <input name="postal_code_2" type="text" placeholder="Zip Code *" required="">
+                                </div>
+                                <h4>Credit card details</h4>
+                                <input id="card-input" class="input-stl" type="text" name="card" pattern="[0-9]{16}" placeholder="Credit card #" required="">
+                                <div class="content__form-row">
+                                    <select name="month">
+                                        <option value="01">01 (Jan)</option>
+                                        <option value="02">02 (Feb)</option>
+                                        <option value="03">03 (Mar)</option>
+                                        <option value="04">04 (Apr)</option>
+                                        <option value="05">05 (May)</option>
+                                        <option value="06">06 (Jun)</option>
+                                        <option value="07">07 (Jul)</option>
+                                        <option value="08">08 (Aug)</option>
+                                        <option value="09">09 (Sep)</option>
+                                        <option value="10">10 (Oct)</option>
+                                        <option value="11">11 (Nov)</option>
+                                        <option value="12">12 (Dec)</option>
+                                    </select>
+                                    <select name="year">
+                                        <option value="18">2018</option>
+                                        <option value="19">2019</option>
+                                        <option value="20">2020</option>
+                                        <option value="21">2021</option>
+                                        <option value="22">2022</option>
+                                        <option value="23">2023</option>
+                                        <option value="24">2024</option>
+                                        <option value="25">2025</option>
+                                        <option value="26">2026</option>
+                                        <option value="27">2027</option>
+                                        <option value="28">2028</option>
+                                        <option value="29">2029</option>
+                                    </select>
+                                </div>
+                                <div class="content__form-row">
+                                    <input type="text" name="cvv" placeholder="CVV Code" required="">
+                                    <p class="svv-code">
+                                        <a href="#" id="cvv-code">What is this?</a>
+                                    </p><p class="cvv-codeInst">
+                                    <span>"Card Verification Value" on your credit card or debit card is a 3 digit number on VISA®, MasterCard® and Discover® branded credit and debit cards. On your American Express® branded credit or debit card it is a 4 digit numeric code.</span>
+                                </p>
+                                    <p></p>
+                                </div>
+                                <input class="input-stl" type="text" name="coupon" placeholder="Coupon Code">
+                                <input id="payment-form__check" type="checkbox" name="checkbox2" value=""> I agree to the <a href="https://www.care4harmony.com/terms-of-use/" style="color: #2953a0">terms</a> and conditions<p></p>
+
+                                <input id="product" type="hidden" name="product_description_1" value="Most Popular Package">
+                                <input id="price" type="hidden" name="product_amount_1" value="113.97">
+                                <input type="hidden" name="clientmail" value="info@healeafdropsoil.com">
+                                <input type="hidden" name="shipping" value="FREE" id="shipInp">
+                                <input type="hidden" name="total" value="113.97" id="totalInp">
+                                <input type="hidden" name="clientname" value="CBD Hemp CBD oil">
+                                <input type="hidden" name="formid" value="home-form">
+                                <input type="hidden" name="location" value="Location">
+                                <input type="hidden" name="url" value="healeafdropsoil.com">
+                                <input class="home-submit-btn btn" type="submit" name="submit" value="RUSH MY ORDER!" disabled="">
+                                <div class="home-form-img content__form-img">
+                                    <img src="img/home_form/mc-afee-secure.png" alt="home-form-img">
+                                    <img src="img/home_form/norton-av.png" alt="home-form-img">
+                                    <img src="img/home_form/trust-arc.jpg" alt="home-form-img">
+                                </div>
+                                <div class="content__form-policy">
+                                    <h5>Refund Policy</h5>
+                                    <p>If you are not fully satisfied with your purchase, you may request a full refund on the purchase price within
+                                        30 days.</p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="another-footer">
+        <div class="container">
+            <div class="footer-wrapp">
+                <ul class="footer-menu">
+                    <li>
+                        <a href="/terms-of-use/">Terms of Use</a>
+                    </li>
+                    <li>
+                        <a href="/privacy-policy/">Privacy policy</a>
+                    </li>
+                    <li>
+                        <a href="/contact/">Contact Us</a>
+                    </li>
+                </ul>
+                <p class="footer-discr discr">This product is not for use by or sale to persons under the age of 18. This product should be used only as directed on the label. It should not be used if you are pregnant
+                    or nursing. Consult with a physician before use if you have a serious medical condition or use prescription medications. A Doctor's advice should be sought before using this
+                    and any supplemental dietary product. All trademarks and copyrights are property of their respective owners and are not affiliated with nor do they endorse this product. These statements have not been evaluated by the FDA. This product is not intended to diagnose, treat, cure or prevent any disease. Individual weight loss results will vary. By using this site you agree to follow the Privacy Policy and all Terms & Conditions printed on this site.
+                    Void Where Prohibited By Law.</p>
+                <div class="footer-copyright-wrapp">
+                    <p class="footer-copyright">Copyright 2018 © All Rights Reserved - RX Flow CBD Oil Vape</p>
+                    <img src="img/1.svg" alt="MasterCard">
+                    <img src="img/2.svg" alt="Visa">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script	src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="js/scripts.min.js"></script>
+
+</body>
