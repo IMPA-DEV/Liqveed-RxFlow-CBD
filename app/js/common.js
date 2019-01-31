@@ -118,4 +118,27 @@ $(function() {
         }
     });
 
+    // Date
+    var date = new Date();
+    var year = date.getFullYear();
+    var day = date.getDate();
+    var month = date.getMonth();
+    var numberDay = date.getDay();
+    var dd, mm;
+    var stкNumberDay = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+    var stkMonth = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    for (var i = 0; i < stкNumberDay.length; i++) {
+        if (i == numberDay) {
+            dd = stкNumberDay[i];
+        }
+    }
+    for (var j = 0; j < stkMonth.length; j++) {
+        if (j == month) {
+            mm = stkMonth[j];
+        }
+    }
+
+    var htmlDay = document.getElementById('today');
+    $(htmlDay).html(dd + ", " + mm + " " + day + ", " + year);
+
 });
